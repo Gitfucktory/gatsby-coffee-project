@@ -1,14 +1,14 @@
 :root{
-    --mainBrown:#2d1ef1;
-    --mainYellow:#ff9e09;
-    --mainGrey: #ece8dc;
+    --mainBlack:#070707;
+    --mainGrey:rgb(51, 51, 50);
+    --mainGreyLight: #d6d4ce;
     --mainWhite: #fff;
     --mainDark: #222;
     }
 body{
     background: var(--mainWhite);
     color: var(--mainDark);
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Segoe UI
     !important;
 }
 h1,h2,h3,h4,h5,h6{
@@ -16,10 +16,36 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.25rem !important;
 }
 .text-yellow{
-    color: var(--mainYellow);
+    color: var(--mainGrey);
 }
 .cart-icon{
     cursor: pointer;
-    color: var(--mainYellow);
+    color: var(--mainGrey);
     font-size: 2rem;
 }
+.default-background,
+.about-background {
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)); */
+    background-position: center;
+    background-size: cover;
+}
+.about-background {
+    min-height: 60vh;
+}
+
+.btn-yellow{
+    color: var(--mainGrey);
+    border-color: var(--mainGrey);
+}
+.btn-yellow:hover {
+    background: var(--mainGrey);
+    color: var(var(--mainBrown));
+}
+
+.footer{
+    background: var(--mainBrown);
+    }
